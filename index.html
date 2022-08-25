@@ -7,25 +7,46 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Mallory's Code Quiz</title>
 </head>
-<body>
 
-    <nav class="high-scores">View high scores</nav>
+<!-- Header with the High Scores and Timer functionality -->
+<header>
+    <div class="high-scores">View high scores</div>
+    <div class="timer"></div>
+        <div class="time-left-text">Time Left</div>
+        <div class="timer-second">75</div>
+</header>
 
-        <div class="quiz-body" id="quiz">
-
-            <div class="currentTime"></div>
-
-            <div class="questions">
-                <h1>Coding Quiz Challenge</h1>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+<main>
+    <!-- Info / Quiz Starter section -->
+    <section class="info-body">
+        <div class="quiz-info">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
                     answers will penalize your score/time by 10 seconds!</p>
-                <ul class="choices"></ul>
-                <button class="start" id="submit">Start Quiz</button>
-             </div>
-        </div>
-        <!-- <div id="results"></div> -->
-             
+            <button class="start">Start Quiz</button>
+         </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz" id="quiz">
+        <h1 id="question"></h1>
+        <ul id="answer-list"></ul>
+            <li><button id="one"></button></li>
+            <li><button id="two"></button></li>
+            <li><button id="three"></button></li>
+            <li><button id="four"></button></li>
+        </ul>
+    </section>
+
+    <!-- High Scores section -->
+    <section class="high-score" id="high-score">
+        <h1>High Scores</h1>
+    </section>
 
 
-</body>
+    </section>
+
+
+</main>
+<script src="./assets/script.js"></script>
 </html>

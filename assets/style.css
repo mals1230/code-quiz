@@ -1,9 +1,14 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 h1 {
     font-size: 45px;
 }
 
 p {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 button {
@@ -12,10 +17,15 @@ button {
 
 .high-scores {
     padding: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.quiz-body {
+.high-scores:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.info-body {
     margin: auto;
     width: 75%;
     padding-top: 50px;

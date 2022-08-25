@@ -1,56 +1,66 @@
+// DEFINING MY VARIABLES
+var startButton = document.querySelector("#start");
+var goBack = document.querySelector("#back");
+var userQuiz = document.querySelector("#quiz");
+var userQuestion = document.querySelector("#question");
+var correctAnswer = document.querySelector("#answer");
+var optionOne = document.querySelector("#one");
+var optionTwo = document.querySelector("#two");
+var optionThree = document.querySelector("#three");
+var optionFour = document.querySelector("#four");
+var highScore = document.querySelector("#high-score");
+var restart = document.querySelector("#restart")
+
+// DEFINING GLOBAL VARIABLES
+var timer;
+var timerCount;
+var userAnswer;
+
+// QUESTIONS FOR THE QUIZ
 var quizQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
+        optionOne: "strings", 
+        optionTwo: "booleans", 
+        optionThree: "alerts", 
+        optionFour: "numbers",
         answer: "alerts"
     },
     {
         question: "The condition in an if / else statement is enclosed within ______.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        optionOne: "quotes", 
+        optionTwo: "curly brackets", 
+        optionThree: "parentheses", 
+        optionFour: "square brackets",
         answer: "parentheses"
     },
     {
         question: "Arrays in Javascript can be used to store ______.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        optionOne: "numbers and strings", 
+        optionTwo:"other arrays", 
+        optionThree:"booleans", 
+        optionFour:"all of the above",
         answer: "all of the above"
     },
     {
         question: "String values must be enclosed within ______ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+        optionOne: "commas", 
+        optionTwo: "curly brackets", 
+        optionThree: "quotes", 
+        optionFour: "parenthesis",
         answer: "quotes"
     },
     {
         question: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
+        optionOne: "Javascript", 
+        optionTwo: "terminal / bash", 
+        optionThree: "for loops", 
+        optionFour: "console log",
         answer: "console log"
     },
 
 ];
 
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-
-function buildQuiz() {
-    var output = []
-    quizQuestions.forEach(
-        (currentQuestion, questionNumber) => {
-            var answers = [];
-            for (selected currentQuestion.answer){
-                answers.push(
-                    <label>
-                        
-                    </label>
-                )
-            }
-        }
-    )
-}
-
-function showResults() {
-
-}
-
-buildQuiz()
-
-submitButton.addEventListener('click', showResults)
+// LOCAL STORAGE
+currentScore = localStorage.getItem("current-score")
+currentHighScore = localStorage.getItem("current-high-score")
