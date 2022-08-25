@@ -1,0 +1,38 @@
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 35px;
+}
+
+button {
+    font-size: 20px;
+}
+
+.high-scores {
+    padding: 15px;
+    font-size: 30px;
+}
+
+.quiz-body {
+    margin: auto;
+    width: 75%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.start {
+    background-color: rgb(67, 19, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: blueviolet;
+}

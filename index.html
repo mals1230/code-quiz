@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Mallory's Code Quiz</title>
 </head>
 <body>
-    
-    <a hef="high-scores" - this chick had an addition HTML - need to figure out how to combine that here></a>
 
-    <div id="wrapper">
-        <!-- Div for timer -->
-        <div id="currentTime"></div>
-        <!-- Div for quiz content -->
-        <div id="questionsDiv">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                answers will penalize your score/time by 10 seconds!</p>
-            <ul id="choicesUl"></ul>
-            <!-- Buttons -->
-            <button id="startTime">Start Quiz</button>
+    <nav class="high-scores">View high scores</nav>
+
+        <div class="quiz-body" id="quiz">
+
+            <div class="currentTime"></div>
+
+            <div class="questions">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers will penalize your score/time by 10 seconds!</p>
+                <ul class="choices"></ul>
+                <button class="start" id="submit">Start Quiz</button>
+             </div>
         </div>
-
-    </div>
+        <!-- <div id="results"></div> -->
+             
 
 
 </body>

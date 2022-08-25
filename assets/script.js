@@ -1,28 +1,56 @@
-var questions = [
+var quizQuestions = [
     {
-        title: "Commonly used data types DO NOT include:",
+        question: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ______.",
+        question: "The condition in an if / else statement is enclosed within ______.",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses"
     },
     {
-        title: "Arrays in Javascript can be used to store ______.",
+        question: "Arrays in Javascript can be used to store ______.",
         choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within ______ when being assigned to variables.",
+        question: "String values must be enclosed within ______ when being assigned to variables.",
         choices: ["commas", "curly brackets", "quotes", "parenthesis"],
         answer: "quotes"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
+        question: "A very useful tool for used during development and debugging for printing content to the debugger is:",
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
 
 ];
+
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+function buildQuiz() {
+    var output = []
+    quizQuestions.forEach(
+        (currentQuestion, questionNumber) => {
+            var answers = [];
+            for (selected currentQuestion.answer){
+                answers.push(
+                    <label>
+                        
+                    </label>
+                )
+            }
+        }
+    )
+}
+
+function showResults() {
+
+}
+
+buildQuiz()
+
+submitButton.addEventListener('click', showResults)
