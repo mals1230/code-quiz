@@ -15,6 +15,7 @@ button {
     font-size: 20px;
 }
 
+/* HIGH SCORES LINK */
 .high-scores {
     padding: 15px;
     font-size: 25px;
@@ -44,5 +45,41 @@ button {
 }
 
 .start:hover {
+    background-color: blueviolet;
+}
+
+/* SCORES HTML PAGE */
+.wrapper {
+    margin: auto;
+    width: 75%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.goBack {
+    background-color: rgb(67, 19, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.goBack:hover {
+    background-color: blueviolet;
+}
+
+.clear {
+    background-color: rgb(67, 19, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.clear:hover {
     background-color: blueviolet;
 }
