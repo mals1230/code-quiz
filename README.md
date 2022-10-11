@@ -5,11 +5,13 @@ I want to take a timed quiz on Javascript fundamentals that stores high scores s
 
 Working on this challenge will prepare me for upcoming interviews where it's likely that I'll be asked to complete a coding assessment. 
 
+## Technologies used:
 This app features dynamically updated HTML and CSS powered by my Javascript code. 
 
 
+## Demo 
+![code-quiz-gif](./assets/codequiz.gif)
 
-Deployed URL:
-
-GitHub repository URL:
+## Deployed URL:
+## GitHub repository URL:
 

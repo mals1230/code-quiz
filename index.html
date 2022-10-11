@@ -8,37 +8,25 @@
     <title>Mallory's Code Quiz</title>
 </head>
 
-<!-- Header with the High Scores and Timer functionality -->
+<!-- Header with the High Score link and Timer functionality -->
 <header>
-    <div class="high-scores">View high scores</div>
-    <div class="timer"></div>
-        <div class="time-left-text">Time Left</div>
-        <div class="timer-second">75</div>
+    <a href="scores.html" class="high-scores">View High Scores</a>
+    <div class="timer" id="timer"></div>
 </header>
 
 <main>
     <!-- Info / Quiz Starter section -->
-    <section class="info-body">
-        <div class="quiz-info">
+    <section class="info-body" id="body">
+        <div class="questions" id="questions">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
                     answers will penalize your score/time by 10 seconds!</p>
-            <button class="start">Start Quiz</button>
+            <ul id="choicesUI"></ul>
+            <button class="start" id="startQuiz">Start Quiz</button>
          </div>
     </section>
 
-    <!-- Quiz Section -->
-    <section class="quiz" id="quiz">
-        <h1 id="question"></h1>
-        <ul id="answer-list"></ul>
-            <li><button id="one"></button></li>
-            <li><button id="two"></button></li>
-            <li><button id="three"></button></li>
-            <li><button id="four"></button></li>
-        </ul>
-    </section>
-
-<script src="./assets/scores.js"></script>
+<script src="script.js"></script>
 </main>
 
 </html>

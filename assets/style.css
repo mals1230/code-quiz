@@ -15,7 +15,6 @@ button {
     font-size: 20px;
 }
 
-/* HIGH SCORES LINK */
 .high-scores {
     padding: 15px;
     font-size: 25px;
@@ -24,6 +23,11 @@ button {
 .high-scores:hover {
     color: blueviolet;
     cursor: pointer;
+}
+
+#timer {
+    float: right;
+    padding: 15px
 }
 
 .info-body {
@@ -48,7 +52,61 @@ button {
     background-color: blueviolet;
 }
 
+
+h1 {
+    text-align: center;
+}
+
+.questions {
+    font-size: 30px;
+}
+
+li { 
+    font-size: 15px;
+    background-color: rgb(67, 19, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+#createLabel {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+#createDiv {
+    font-size: 15px;
+    color: rgb(84, 83, 83)
+}
+
+#submit {
+    background-color: rgb(67, 19, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: blueviolet;
+}
+
+
 /* SCORES HTML PAGE */
+
+.highScore li {
+    background-color: rgb(193, 193, 193);
+    border-radius: 0px;
+    color: black;
+    list-style: none;
+}
+
+
 .wrapper {
     margin: auto;
     width: 75%;

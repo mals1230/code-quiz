@@ -1,7 +1,7 @@
 // DELCARING MY VARIABLES
 var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
-var goBack = document.querySelector("goBack");
+var goBack = document.querySelector("#goBack");
 
 // CLEAR SCORES 
 clear.addEventListener("click", function () {
@@ -24,4 +24,4 @@ if (allScores !== null) {
 // GOING BACK TO INDEX.HTML
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html")
-})
+});
