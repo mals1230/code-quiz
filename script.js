@@ -28,15 +28,13 @@ var quizQuestions = [
 
 ];
 
-
+// DEFINING MY VARIABLES
 var score = 0;
 var questionIndex = 0;
-
 var timer = document.querySelector("#timer");
 var startQuiz = document.querySelector("#startQuiz");
 var questions = document.querySelector("#questions");
 var body = document.querySelector("#body")
-
 var secondsLeft = 76
 var holdInterval = 0
 var penalty = 10
@@ -100,6 +98,7 @@ function compare(event) {
     questions.appendChild(createDiv);
 }
 
+// QUIZ IS DONE, CALCULATE AND SAVE USERS INITIALS AND SCORE
 function allDone() {
     questions.innerHTML = "";
     timer.innerHTML = "";
@@ -107,12 +106,10 @@ function allDone() {
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "All Done!"
-
     questions.appendChild(createH1);
 
     var createP = document.createElement("p");
     createP.setAttribute("id", "createP");
-
     questions.appendChild(createP);
 
     if (secondsLeft >= 0) {
@@ -120,28 +117,24 @@ function allDone() {
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
-
         questions.appendChild(createP2);
     }
 
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter initials:";
-
     questions.appendChild(createLabel);
 
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
     createInput.textContent = "";
-
     questions.appendChild(createInput);
 
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "submit");
     createSubmit.textContent = "submit";
-
     questions.appendChild(createSubmit);
 
     createSubmit.addEventListener("click", function () {
