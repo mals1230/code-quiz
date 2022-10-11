@@ -8,7 +8,7 @@ var optionOne = document.querySelector("#one");
 var optionTwo = document.querySelector("#two");
 var optionThree = document.querySelector("#three");
 var optionFour = document.querySelector("#four");
-var highScore = document.querySelector("#high-score");
+var highScores = document.querySelector("#high-scores");
 var restart = document.querySelector("#restart")
 
 // DEFINING GLOBAL VARIABLES
@@ -20,42 +20,27 @@ var userAnswer;
 var quizQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
-        optionOne: "strings", 
-        optionTwo: "booleans", 
-        optionThree: "alerts", 
-        optionFour: "numbers",
+        choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
     {
         question: "The condition in an if / else statement is enclosed within ______.",
-        optionOne: "quotes", 
-        optionTwo: "curly brackets", 
-        optionThree: "parentheses", 
-        optionFour: "square brackets",
+        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses"
     },
     {
         question: "Arrays in Javascript can be used to store ______.",
-        optionOne: "numbers and strings", 
-        optionTwo:"other arrays", 
-        optionThree:"booleans", 
-        optionFour:"all of the above",
+        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above"
     },
     {
         question: "String values must be enclosed within ______ when being assigned to variables.",
-        optionOne: "commas", 
-        optionTwo: "curly brackets", 
-        optionThree: "quotes", 
-        optionFour: "parenthesis",
+        optionOne: ["commas", "curly brackets", "quotes", "parenthesis"],
         answer: "quotes"
     },
     {
         question: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        optionOne: "Javascript", 
-        optionTwo: "terminal / bash", 
-        optionThree: "for loops", 
-        optionFour: "console log",
+        optionOne: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
 
